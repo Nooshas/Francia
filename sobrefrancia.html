@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Francia - Voyage</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- VIDEO BACKGROUND (کامنت شده مثل کد خودت) -->
+    <!--
+    <video id="video" autoplay muted loop playsinline>
+        <source src="video/fuente.mp4" type="video/mp4">
+    </video>
+    -->
+
+    <div class="header-container">
+        <figure class="logo">
+            <a href="activity.html">
+                <img src="imagenes/logo.jpg" alt="voyage">
+            </a>
+        </figure>
+        <h1>Voyage</h1>
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            
+            <li class="current"><a href="sobrefrancia.html">Sobre francia</a></li>
+            <li class="current"><a href="destinos.html">Destinos</a></li>
+            <li class="current"><a href="contacto.html">Contacto</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <form id="login" action="contacto.html" method="post" class="login-form">
+        <input type="text" name="user" placeholder="Usuario" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <form class="search-form">
+        <input type="search" placeholder="Buscar en el sitio...">
+        <button type="submit">🔍</button>
+    </form>
+
+    <!-- گالری عکس‌ها (همون ساختار خودت) -->
+    <div class="galeria" id="galeria">
+        <figure class="medium">
+            <img class="portrait fit" src="" alt="Imagen 1">
+        </figure>
+        <figure class="medium">
+            <img class="portrait fit" src="" alt="Imagen 2">
+        </figure>
+        <figure class="medium">
+            <img class="portrait fit" src="" alt="Imagen 3">
+        </figure>
+        <figure class="medium">
+            <img class="portrait fit" src="" alt="Imagen 4">
+        </figure>
+    </div>
+
+    <div class="centered">
+        <button class="button" id="botonBack">Anterior</button>
+        <button class="button" id="botonNext">Siguiente</button>
+    </div>
+
+    <!-- فوتر دقیقاً همون شکلی که فرستادی + فقط یک لینک سایت‌مپ زیرش -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <!-- Columna 1 -->
+                <div class="footer-column">
+                    <h3>Sobre Nosotros</h3>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="footer-column">
+                    <h3>Descubre Francia</h3>
+                    <ul>
+                        <li><a href="#">Mejor época para visitar</a></li>
+                        <li><a href="#">Requisitos de visa</a></li>
+                        <li><a href="#">Cómo moverse por Francia</a></li>
+                        <li><a href="#">Itinerarios sugeridos</a></li>
+                        <li><a href="#">Consejos de viaje</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="footer-column">
+                    <h3>Destinos Populares</h3>
+                    <ul>
+                        <li><a href="#">París</a></li>
+                        <li><a href="#">Costa Azul</a></li>
+                        <li><a href="#">Provenza</a></li>
+                        <li><a href="#">Valle del Loira</a></li>
+                        <li><a href="#">Mont Saint-Michel</a></li>
+                        <li><a href="#">Burdeos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4 -->
+                <div class="footer-column">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">Blog / Guías</a></li>
+                        <li><a href="#">Mapa de Francia</a></li>
+                        <li><a href="#">Lista de equipaje</a></li>
+                        <li><a href="#">Seguro de viaje</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- بخش پایین فوتر (دقیقاً همون کد خودت) -->
+            <div class="footer-bottom">
+                <p>© 2026 Nooshafarin – Todos los derechos de este sitio web pertenecen a su propietaria Nooshafarin. Todos los derechos reservados.</p>
+                <div class="social-center">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/in.jpg" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/face.jpg" alt="Facebook">
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/you.jpg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../java/app.js"></script>
+
+</body>
+</html>

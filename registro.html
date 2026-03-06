@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro | Voyage</title>
+        <link rel="stylesheet" href="../css/style.css" >
+    
+    </head>
+<body>
+        <!-- VIDEO BACKGROUND -->
+        <video id="video" autoplay muted playsinline></video>
+
+        <!-- HEADER -->
+        <header class="header-container">
+        <figure class="logo">
+        <a href="index.html">
+        <img src="imagenes/logo.jpg" alt="Voyage">
+        </a>
+        </figure>
+        <h1>Voyage</h1>
+        </header>
+
+<!-- NAV -->
+<nav class="main-nav">
+<ul>
+            <li><a href="index.html">Inicio</a></li>
+            
+            <li class="current"><a href="sobrefrancia.html">Sobre francia</a></li>
+            <li class="current"><a href="destinos.html">Destinos</a></li>
+            <li class="current"><a href="contacto.html">Contacto</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+</nav>
+
+<!-- FORMULARIO DE REGISTRO -->
+<main>
+        <section class="register-container">
+        <form class="register-form" action="#" method="post">
+        <h2>Registro de usuario</h2>
+        <fieldset>
+        <legend>Datos personales</legend>
+        <input type="text" name="dni" placeholder="DNI" class="mayusculas" required>
+        <input type="text" name="nombre" placeholder="Nombre" class="mayusculas" required>
+        <input type="text" name="apellidos" placeholder="Apellidos" class="mayusculas" required>
+        <label>
+        Fecha de nacimiento
+        <input type="date" name="fecha_nacimiento" required>
+        </label>
+        </fieldset>
+        <fieldset>
+        <legend>Domicilio</legend>
+        <input type="text" name="direccion" placeholder="Dirección" class="mayusculas">
+        <input type="text" name="ciudad" placeholder="Ciudad" class="mayusculas">
+        <input type="text" name="codigo_postal" placeholder="Código Postal">
+        </fieldset>
+        <fieldset>
+        <legend>Contacto</legend>
+        <input type="email" name="email" placeholder="Email" required>
+        </fieldset>
+        <fieldset>
+        <legend>Preferencias</legend>
+        <label>
+        <input type="checkbox" id="promociones" name="promociones">
+        Deseo recibir información y promociones por email
+        </label>
+        </fieldset>
+        <button type="submit">Registrarse</button>
+        </form>
+        </section>
+</main>
+
+<!-- FOOTER دقیقاً همون شکل صفحات قبلی (۴ ستون + پایین + لینک ساده سایت‌مپ زیرش) -->
+        <footer class="site-footer">
+        <div class="footer-container">
+        <div class="footer-columns">
+
+<!-- Columna 1 -->
+        <div class="footer-column">
+        <h3>Sobre Nosotros</h3>
+        <ul>
+        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+        <li><a href="#">Términos de Uso</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+        </div>
+
+<!-- Columna 2 -->
+        <div class="footer-column">
+        <h3>Descubre Francia</h3>
+        <ul>
+        <li><a href="#">Mejor época para visitar</a></li>
+        <li><a href="#">Requisitos de visa</a></li>
+        <li><a href="#">Cómo moverse por Francia</a></li>
+        <li><a href="#">Itinerarios sugeridos</a></li>
+        <li><a href="#">Consejos de viaje</a></li>
+        </ul>
+        </div>
+
+<!-- Columna 3 -->
+        <div class="footer-column">
+        <h3>Destinos Populares</h3>
+        <ul>
+        <li><a href="#">París</a></li>
+        <li><a href="#">Costa Azul</a></li>
+        <li><a href="#">Provenza</a></li>
+        <li><a href="#">Valle del Loira</a></li>
+        <li><a href="#">Mont Saint-Michel</a></li>
+        <li><a href="#">Burdeos</a></li>
+        </ul>
+        </div>
+
+<!-- Columna 4 -->
+        <div class="footer-column">
+        <h3>Recursos</h3>
+        <ul>
+        <li><a href="#">Blog / Guías</a></li>
+        <li><a href="#">Mapa de Francia</a></li>
+        <li><a href="#">Lista de equipaje</a></li>
+        <li><a href="#">Seguro de viaje</a></li>
+        </ul>
+        </div>
+
+       
+
+<!-- بخش پایین فوتر (دقیقاً همون شکل تو) -->
+        <div class="footer-bottom">
+        <p>© 2026 Nooshafarin – Todos los derechos de este sitio web pertenecen a su propietaria Nooshafarin. Todos los derechos reservados.</p>
+        <div class="social-center">
+        <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/in.jpg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/face.jpg" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/you.jpg" alt="YouTube">
+        </a>
+        </div>
+        </div>
+
+
+
+        </div>
+        </div>
+        </footer>
+
+<!-- JAVASCRIPT -->
+            <script>
+            // ===== COOKIE: promociones =====
+            document.querySelector(".register-form").addEventListener("submit", function () {
+            const promos = document.getElementById("promociones").checked;
+            document.cookie = "email_promociones=" + (promos ? "yes" : "no") + "; max-age=2592000; path=/";
+            });
+
+            // ===== VIDEO BACKGROUND PLAYLIST =====
+            const videos = [
+            "video/pasta.mp4",
+            "video/wino.mp4",
+            "video/shrimp.mp4",
+            "video/waiter.mp4",
+            "video/chef.mp4"
+            ];
+            let index = 0;
+            const video = document.getElementById("video");
+            video.src = videos[index];
+            video.play();
+            video.addEventListener("ended", function () {
+            index = (index + 1) % videos.length;
+            video.src = videos[index];
+            video.play();
+            });
+
+            // ===== INPUTS MAYUSCULAS =====
+            const inputsMayus = document.querySelectorAll(".mayusculas");
+            inputsMayus.forEach(input => {
+            input.addEventListener("input", () => {
+            input.value = input.value.toUpperCase();
+            });
+            });
+            </script>
+
+</body>
+</html>

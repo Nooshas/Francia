@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Voyage</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../java/app.js"></script>
+</head>
+<body>
+
+    <div class="header-container">
+        <figure class="logo">
+            <a href="activity.html">
+                <img src="imagenes/logo.jpg" alt="voyage">
+            </a>
+        </figure>
+        <h1>Voyage</h1>
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            
+            <li class="current"><a href="sobrefrancia.html">Sobre francia</a></li>
+            <li class="current"><a href="destinos.html">Destino</a></li>
+            <li class="current"><a href="contacto.html">Contacto</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <form id="login" action="contacto.html" method="post" class="login-form">
+        <input type="text" name="user" placeholder="Usuario" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <form class="search-form">
+        <input type="search" placeholder="Buscar en el sitio...">
+        <button type="submit">🔍</button>
+    </form>
+
+    <div class="contact-map-container">
+        <!-- FORM LEFT -->
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Asunto">
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <!-- MAP RIGHT -->
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2187.493021759127!2d2.2919063758496088!3d48.85837007133206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e1!3m2!1sen!2ses!4v1770321984334!5m2!1sen!2ses"></iframe>
+        </div>
+    </div>
+
+    <!-- فوتر دقیقاً مثل بقیه صفحات (۴ ستون + پایین + لینک سایت‌مپ ساده زیرش) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+
+                <!-- Columna 1 -->
+                <div class="footer-column">
+                    <h3>Sobre Nosotros</h3>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="footer-column">
+                    <h3>Descubre Francia</h3>
+                    <ul>
+                        <li><a href="#">Mejor época para visitar</a></li>
+                        <li><a href="#">Requisitos de visa</a></li>
+                        <li><a href="#">Cómo moverse por Francia</a></li>
+                        <li><a href="#">Itinerarios sugeridos</a></li>
+                        <li><a href="#">Consejos de viaje</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="footer-column">
+                    <h3>Destinos Populares</h3>
+                    <ul>
+                        <li><a href="#">París</a></li>
+                        <li><a href="#">Costa Azul</a></li>
+                        <li><a href="#">Provenza</a></li>
+                        <li><a href="#">Valle del Loira</a></li>
+                        <li><a href="#">Mont Saint-Michel</a></li>
+                        <li><a href="#">Burdeos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4 -->
+                <div class="footer-column">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">Blog / Guías</a></li>
+                        <li><a href="#">Mapa de Francia</a></li>
+                        <li><a href="#">Lista de equipaje</a></li>
+                        <li><a href="#">Seguro de viaje</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- بخش پایین فوتر (دقیقاً همون شکل قبلی) -->
+            <div class="footer-bottom">
+                <p>© 2026 Nooshafarin – Todos los derechos de este sitio web pertenecen a su propietaria Nooshafarin. Todos los derechos reservados.</p>
+                <div class="social-center">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/in.jpg" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/face.jpg" alt="Facebook">
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="imagenes/you.jpg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
